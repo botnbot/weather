@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "weather"
+version = "0.1.0"
+description = "Get weather information from API"
+authors = ["Sergey Korobeynikov <skoro@smn35.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[tool.poetry.group.lint.dependencies]
+flake8 = "^7.1.1"
+mypy = "^1.14.0"
+black = "^24.10.0"
+isort = "^5.13.2"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+pytest-cov = "^6.0.0"
+
+[tool.black]
+line_length =119
+
+[tool.isort]
+line_length =119
+
+[tool.mypy]
+disallow_untyped_defs = true
+warn_return_any = true
+
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
