@@ -1,9 +1,8 @@
-from importlib import reload
+from unittest.mock import patch
 
 from requests import exceptions
+
 from src.API import get_lat_lon_from_api, get_weather_from_api
-from unittest.mock import patch
-from main import main
 
 
 def test_get_lat_lon_from_api_succes():
